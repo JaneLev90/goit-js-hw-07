@@ -36,14 +36,4 @@ galleryContainer.addEventListener('click', (event) =>{
   });
 
 
-   
-
-// const onGallaryElementClick = (el) => {
-//     if (el.target.classList.value !== 'gallery__image'){
-//         return
-//     }
-//     el.target.parentNode.stopPropagation()
-//     basicLightbox.create(`<img src="${el.target.dataset.source}">`).show()
-// }
-
-// galleryContainer.addEventListener('click', onGallaryElementClick);
+  // ???  document.removeEventListener('keydown', )
