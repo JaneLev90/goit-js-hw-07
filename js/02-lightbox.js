@@ -25,7 +25,7 @@ galleryContainer.addEventListener('click', (event) =>{
         return
     }
     var lightBox = new SimpleLightbox('.gallery a', { 
-        captionDelay: 270,
+        captionDelay: 250,
         captionsData: 'alt',
      });
      });
