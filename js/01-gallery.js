@@ -24,14 +24,19 @@ galleryContainer.addEventListener('click', (event) =>{
     if (event.target.nodeName !== 'IMG'){
         return
     }
-    basicLightbox.create(`<img src="${event.target.dataset.source}">`).show()
-});
-
-document.addEventListener('keydown', (e) => {
+    const instance = basicLightbox.create(`<img src="${event.target.dataset.source}">`);
+   instance.show();
+   
+   document.addEventListener('keydown', (e) => {
     if (e.code === 'Escape'){
-        basicLightbox.close();
+        console.log (e);
+        instance.close();
     }
 })
+  });
+
+
+   
 
 // const onGallaryElementClick = (el) => {
 //     if (el.target.classList.value !== 'gallery__image'){
